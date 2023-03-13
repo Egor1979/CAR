@@ -1,0 +1,64 @@
+html{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    color: #181818;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Roboto Condenced",sans-serif;
+    font-weight: 400;
+    /* font-family: "Fira Sans",sans-serif; */
+     
+}
+a{
+    text-decoration: none;
+}
+.header {
+    background-color: #332208;
+}
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.logo {
+}
+.logo__link {
+}
+.menu {
+}
+.menu__list {
+    display: flex;
+}
+/* между элементами 30 пикс.с обоих сторон по 15 */
+.menu__item {
+    margin: 0 15px;
+}
+.menu__list-link {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 5px;
+}
+/* ховер сделал подчеркив.при наведении */
+
+.menu__list-link:hover{
+border-bottom:1px solid #fefefe;
+}
+.phone {
+    color: #fefefe;
+    font-size: 18px;
+    line-height: 21px;   
+}
