@@ -1,21 +1,20 @@
-html{
+html {
     box-sizing: border-box;
 }
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: inherit;
 }
-body{
+body {
     color: #181818;
     font-size: 16px;
     font-weight: 400;
-    font-family: "Roboto Condenced",sans-serif;
+    font-family: "Roboto Condenced", sans-serif;
     font-weight: 400;
     /*  */
-     
 }
-a{
+a {
     text-decoration: none;
 }
 .header {
@@ -51,19 +50,19 @@ a{
     font-size: 18px;
     line-height: 21px;
     padding-bottom: 5px;
-     transition: all 5s;
-     border-bottom:1px solid transparent;
-     /*будет плавно появляться */
+    transition: all 5s;
+    border-bottom: 1px solid transparent;
+    /*будет плавно появляться */
 }
 /* ховер сделал подчеркив.при наведении */
 
-.menu__list-link:hover{
-border-bottom:1px solid #fefefe;
+.menu__list-link:hover {
+    border-bottom: 1px solid #fefefe;
 }
 .phone {
     color: #fefefe;
     font-size: 18px;
-    line-height: 21px;   
+    line-height: 21px;
 }
 .top {
 }
@@ -79,47 +78,108 @@ border-bottom:1px solid #fefefe;
     width: 50%;
 }
 .top__title {
-    font-family: "Fira Sans",sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 500;
     font-size: 48px;
     line-height: 58px;
-    margin:0 auto 20px;
+    margin: 0 auto 20px;
     /* выров блок */
     max-width: 455px;
-
 }
 .top__text {
-    font-size: 24px;line-height: 20px;
-    margin:0 auto 50px;
+    font-size: 24px;
+    line-height: 20px;
+    margin: 0 auto 50px;
     max-width: 470px;
 }
-.application-btn{
+.application-btn {
     text-transform: uppercase;
     color: #fefefe;
     background-color: #c5ac2d;
     padding: 16px 19px 15px;
-    transition: all .5s;
+    transition: all 0.5s;
     border: 1px solid transparent;
-    
 }
-.application-btn:hover{
-    background-color:#fefefe ;
+.application-btn:hover {
+    background-color: #fefefe;
     color: #c5ac2d;
     border: 1px solid #c5ac2d;
 }
+
 .top__slider {
+    width: 50%;
 }
+.top__slider .slick-dots {
+    right: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+}
+
+.slick-dots {
+    /* можно посм через средст разр в слик слайд */
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots button {
+    /* можно посм через средст разр в слик слайд */
+    width: 8px;
+    height: 8px;
+    font-size: 0; /*убрать цифры */
+    border: none;
+    border-radius: 50%;
+    padding: 0;
+    background-color: #332208;
+    font-size: 0px;
+}
+.slick-active button {
+    width: 16px;
+    height: 16px;
+}
+
 .top__slider-item {
 }
 .top__slider-images {
 }
 .top__slider-text {
+    font-family: "Fira Sans ", sans-serif;
+    font-weight: 500;
+    padding-right: 100px;
+    text-align: right;
 }
+.top__slider-text span + span {
+    padding-left: 12px;
+    /* будет отступ у спана влево у всех кроме первого и чтобы между не было тга */
+}
+
 .top__bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
 }
 .top__items {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
 }
 .top__item {
+    border: 1px solid #181818;
+    padding: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    /* оси поменялись после колумна по этому алайн айтемс пошу свойства дж контент */
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba (0, 0, 0, 0, 25);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.top__item:hover {
+    transform: scale(1.25);
 }
 .top__item-img {
 }
@@ -128,4 +188,9 @@ border-bottom:1px solid #fefefe;
 .top__links {
 }
 .top__link {
+    color: 1px solid #181818;
+    border-bottom: #181818;
+}
+.top__link+.top__link{
+margin-left: 20px;
 }
